@@ -4,7 +4,7 @@
 
 ```
 cd ~/.config  # or create it and cd to it
-git@github.com:digitalronin/neovim-config.git nvim
+git clone git@github.com:digitalronin/neovim-config.git nvim
 mkdir -p nvim/tmp/backup nvim/tmp/swap nvim/tmp/undo
 ```
 

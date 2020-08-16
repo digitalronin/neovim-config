@@ -308,6 +308,7 @@ nnoremap <silent> <C-a>h :TmuxNavigateLeft
 nnoremap <silent> <C-a>j :TmuxNavigateDown
 nnoremap <silent> <C-a>k :TmuxNavigateUp
 nnoremap <silent> <C-a>l :TmuxNavigateRight
+let g:tmux_navigator_no_mappings = 1
 
 "Insert mode ctrl key mappings
 " a   tmux command prefix

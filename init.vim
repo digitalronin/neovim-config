@@ -22,6 +22,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-surround'
   Plug 'tpope/vim-unimpaired'
   Plug 'vim-ruby/vim-ruby'
+  Plug 'vim-scripts/BufOnly.vim'
 
 " TODO
 " ag.vim

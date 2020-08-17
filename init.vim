@@ -305,11 +305,11 @@ source ~/.config/nvim/scripts/ctrlp.vim
 source ~/.config/nvim/scripts/prose.vim
 
 " Not sure why these are needed - vim works fine without them
-let g:tmux_navigator_no_mappings = 1
 nnoremap <silent> <C-a>h :TmuxNavigateLeft
 nnoremap <silent> <C-a>j :TmuxNavigateDown
 nnoremap <silent> <C-a>k :TmuxNavigateUp
 nnoremap <silent> <C-a>l :TmuxNavigateRight
+let g:tmux_navigator_no_mappings = 1
 
 "Insert mode ctrl key mappings
 " a   tmux command prefix

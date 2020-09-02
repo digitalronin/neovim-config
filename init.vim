@@ -23,12 +23,12 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-unimpaired'
   Plug 'vim-ruby/vim-ruby'
   Plug 'vim-scripts/BufOnly.vim'
+  Plug 'sirver/UltiSnips'
 
 " TODO
 " ag.vim
 " ale
 " tslime.vim
-" ultisnips
 " vim-multiple-cursors
 " vim-rails
 " vim-rspec

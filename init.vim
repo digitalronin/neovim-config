@@ -29,7 +29,6 @@ call plug#begin('~/.config/nvim/plugged')
 " ag.vim
 " ale
 " tslime.vim
-" ultisnips
 " vim-multiple-cursors
 " vim-rails
 " vim-rspec

@@ -23,6 +23,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-unimpaired'
   Plug 'vim-ruby/vim-ruby'
   Plug 'vim-scripts/BufOnly.vim'
+  Plug 'sirver/UltiSnips'
 
 " TODO
 " ag.vim
@@ -139,7 +140,7 @@ let NERDTreeIgnore=['\.class$']
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.class
 
 "UltiSnips
-let g:UltiSnipsSnippetDirectories = ['~/.vim/UltiSnips', 'UltiSnips']
+let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips', 'UltiSnips']
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsExpandTrigger="<C-b>"
 let g:UltiSnipsJumpForwardTrigger="<C-b>"

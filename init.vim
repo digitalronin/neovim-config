@@ -24,6 +24,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'vim-ruby/vim-ruby'
   Plug 'vim-scripts/BufOnly.vim'
   Plug 'sirver/UltiSnips'
+  Plug 'tsandall/vim-rego'
 
 " TODO
 " ag.vim
@@ -297,6 +298,15 @@ let g:go_highlight_methods = 1
 let g:go_highlight_functions = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
+
+" vim-rego autoformat
+" https://github.com/tsandall/vim-rego
+let g:formatdef_rego = '"opa fmt"'
+let g:formatters_rego = ['rego']
+let g:autoformat_autoindent = 0
+let g:autoformat_retab = 0
+au BufWritePre *.rego Autoformat
+let g:autoformat_verbosemode = 1
 
 source ~/.config/nvim/scripts/debug.vim
 source ~/.config/nvim/scripts/testrunner.vim

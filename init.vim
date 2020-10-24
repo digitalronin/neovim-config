@@ -25,6 +25,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'vim-scripts/BufOnly.vim'
   Plug 'sirver/UltiSnips'
   Plug 'tsandall/vim-rego'
+  Plug 'elixir-lang/vim-elixir'
 
 " TODO
 " ag.vim

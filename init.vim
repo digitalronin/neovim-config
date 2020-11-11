@@ -15,6 +15,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'jpalardy/vim-slime'
   Plug 'morhetz/gruvbox' "Theme
   Plug 'preservim/nerdtree'
+  Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'rking/ag.vim'
   Plug 'tomtom/tcomment_vim'
   Plug 'tpope/vim-eunuch'

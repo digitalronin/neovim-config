@@ -29,9 +29,10 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'sirver/UltiSnips'
   Plug 'tsandall/vim-rego'
   Plug 'elixir-lang/vim-elixir'
+  Plug 'jgdavey/tslime.vim'
+  Plug 'thoughtbot/vim-rspec'
 
 " TODO
-" ag.vim
 " ale
 " tslime.vim
 " vim-multiple-cursors

@@ -309,6 +309,7 @@ source ~/.config/nvim/scripts/testrunner.vim
 source ~/.config/nvim/scripts/remove_trailing_whitespace.vim
 source ~/.config/nvim/scripts/ctrlp.vim
 source ~/.config/nvim/scripts/prose.vim
+source ~/.config/nvim/scripts/visual_search.vim
 
 " Not sure why these are needed - vim works fine without them
 nnoremap <silent> <C-a>h :TmuxNavigateLeft

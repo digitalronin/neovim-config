@@ -47,6 +47,7 @@ call plug#end()
 set nocompatible
 
 syntax enable
+set number  " line numbers on
 
 " Colors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"  " Fixes tmux 24-bit color issues

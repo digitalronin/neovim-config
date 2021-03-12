@@ -31,3 +31,10 @@ function MarkdownMode()
 endfunction
 
 :command! Markdown :call MarkdownMode()
+
+function Shrug()
+  let text = "¯\\_(ツ)_/¯"
+  exec ":normal O" . text
+endfunction
+
+:command! Shrug :call Shrug()

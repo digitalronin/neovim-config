@@ -319,6 +319,9 @@ nnoremap <silent> <C-a>k :TmuxNavigateUp
 nnoremap <silent> <C-a>l :TmuxNavigateRight
 let g:tmux_navigator_no_mappings = 1
 
+" Open README.md in a new tab
+nmap <Leader>gr :tab drop README.md<CR>
+
 "Insert mode ctrl key mappings
 " a   tmux command prefix
 " b   UltiSnips trigger

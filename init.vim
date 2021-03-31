@@ -32,6 +32,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'jgdavey/tslime.vim'
   Plug 'thoughtbot/vim-rspec'
   Plug 'tomlion/vim-solidity'
+  Plug 'pangloss/vim-javascript'
 
 " TODO
 " ale

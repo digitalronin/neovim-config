@@ -161,7 +161,7 @@ map <Leader>tn :tabnew<CR>
 "Fugitive shortcuts
 map <Leader>gs :Gstatus<CR>
 map <Leader>gw :Gwrite<CR>
-map <Leader>gc :Gcommit<CR>
+map <Leader>gc :Git commit<CR>
 
 "tabularize
 map <Leader>a: :Tabularize /:\zs<CR>

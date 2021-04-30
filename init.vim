@@ -153,7 +153,6 @@ let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips', 'UltiSnips']
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsExpandTrigger="<C-b>"
 let g:UltiSnipsJumpForwardTrigger="<C-b>"
-map <leader>ls :echo UltiSnips_ListSnippets()<CR>
 map <leader>us :UltiSnipsEdit<CR>
 
 "New tab

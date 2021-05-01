@@ -20,3 +20,10 @@ snippet rb
 ${0}
 \`\`\`
 endsnippet
+
+# Used to include a local file as a code sample
+snippet file
+\`\`\`${0:ruby}
+<%= File.read("$1") %>
+\`\`\`
+endsnippet

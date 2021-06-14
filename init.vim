@@ -307,6 +307,9 @@ let g:go_highlight_functions = 1
 let g:go_highlight_operators = 1
 let g:go_highlight_build_constraints = 1
 
+" Enable syntax highlighting of code blocks in markdown
+let g:markdown_fenced_languages = ['html', 'javascript', 'python', 'ruby', 'vim']
+
 source ~/.config/nvim/scripts/debug.vim
 source ~/.config/nvim/scripts/testrunner.vim
 source ~/.config/nvim/scripts/remove_trailing_whitespace.vim

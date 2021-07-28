@@ -34,6 +34,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tomlion/vim-solidity'
   Plug 'vaporlang/vim-vyper'
   Plug 'pangloss/vim-javascript'
+  Plug 'folke/twilight.nvim'
 
 " TODO
 " ale
@@ -260,9 +261,6 @@ nmap <Leader>cr ggdG"+p
 " Visually select the last yank into this buffer
 nmap <Leader>sp '[V']$
 
-" cheat.txt
-:command! Cheat sp ~/.dotfiles/vim/cheat.txt
-
 " source .exrc or .vimrc in current folder, on launch
 set exrc
 " disable shell and filesystem operations from set exrc
@@ -328,6 +326,14 @@ let g:tmux_navigator_no_mappings = 1
 
 " Open README.md in a new tab
 nmap <Leader>gr :tab drop README.md<CR>
+
+lua << EOF
+  require("twilight").setup {
+    -- your configuration comes here
+    -- or leave it empty to use the default settings
+    -- refer to the configuration section below
+  }
+EOF
 
 "Insert mode ctrl key mappings
 " a   tmux command prefix

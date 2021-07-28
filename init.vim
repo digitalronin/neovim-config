@@ -240,6 +240,9 @@ set grepprg=ag\ --nogroup\ --nocolor
 " bind K to grep word under cursor
 nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
 
+" bind gp (go pasted) to select previously pasted text
+nnoremap gp `[v`]
+
 " edit (e) & source (v) .vimrc
 map <Leader>sv :source ~/.vimrc<CR>''
 map <Leader>se :e ~/.vimrc<CR>

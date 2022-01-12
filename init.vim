@@ -35,6 +35,10 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'vaporlang/vim-vyper'
   Plug 'pangloss/vim-javascript'
   Plug 'folke/twilight.nvim'
+  Plug 'leafgarland/typescript-vim'
+  Plug 'peitalin/vim-jsx-typescript'
+  Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+  Plug 'jparise/vim-graphql'
 
 " TODO
 " ale

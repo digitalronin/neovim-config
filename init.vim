@@ -39,6 +39,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'peitalin/vim-jsx-typescript'
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
   Plug 'jparise/vim-graphql'
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " TODO
 " ale
@@ -346,6 +347,11 @@ lua << EOF
     -- refer to the configuration section below
   }
 EOF
+
+" Install typescript language server for CoC
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
 
 "Insert mode ctrl key mappings
 " a   tmux command prefix

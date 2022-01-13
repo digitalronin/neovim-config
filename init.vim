@@ -353,6 +353,9 @@ let g:coc_global_extensions = [
   \ 'coc-tsserver'
   \ ]
 
+" Show CoC hover tips for word under cursor
+nnoremap <silent> K :call CocAction('doHover')<CR>
+
 "Insert mode ctrl key mappings
 " a   tmux command prefix
 " b   UltiSnips trigger

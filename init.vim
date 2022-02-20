@@ -40,6 +40,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
   Plug 'jparise/vim-graphql'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
 
 " TODO
 " ale

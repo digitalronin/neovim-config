@@ -167,7 +167,7 @@ map <leader>us :UltiSnipsEdit<CR>
 map <Leader>tn :tabnew<CR>
 
 "Fugitive shortcuts
-map <Leader>gs :Gstatus<CR>
+map <Leader>gs :Git<CR>
 map <Leader>gw :Gwrite<CR>
 map <Leader>gc :Git commit<CR>
 

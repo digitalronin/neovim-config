@@ -128,24 +128,11 @@ vmap <C-j> ]egv
 vmap > >gv
 vmap < <gv
 
-"Suppress Syntastic whining (in JS ES6 source code)
-map <Leader>st :SyntasticToggleMode<CR>
-
-"NERDTree
-map <Leader>nt :NERDTreeToggle<CR>
-map <Leader>nf :NERDTreeFind<CR>
-
 " Refresh NERDTree pane
 "
 " ensure NrrwRgn doesn't map ,nr
 " https://github.com/chrisbra/NrrwRgn/issues/52
 let g:nrrw_rgn_nomap_nr = 1
-
-nmap <leader>nr :NERDTreeFocus<cr> \| R \| <c-w><c-p>
-" Zoom the NERDTree pane
-nmap <leader>na :NERDTree<cr>A<c-w><c-p>
-" Unzoom the NERDTree pane
-nmap <leader>nn :NERDTree<cr><c-w><c-p>
 
 " Better tab completion of vim commands
 set wildmenu
@@ -162,6 +149,23 @@ let g:UltiSnipsSnippetDirectories = ['~/.config/nvim/UltiSnips', 'UltiSnips']
 let g:UltiSnipsEditSplit="vertical"
 let g:UltiSnipsExpandTrigger="<C-b>"
 let g:UltiSnipsJumpForwardTrigger="<C-b>"
+
+"""""
+" Leader bindings
+"
+nmap <leader>nr :NERDTreeFocus<cr> \| R \| <c-w><c-p>
+" Zoom the NERDTree pane
+nmap <leader>na :NERDTree<cr>A<c-w><c-p>
+" Unzoom the NERDTree pane
+nmap <leader>nn :NERDTree<cr><c-w><c-p>
+
+"Suppress Syntastic whining (in JS ES6 source code)
+map <Leader>st :SyntasticToggleMode<CR>
+
+"NERDTree
+map <Leader>nt :NERDTreeToggle<CR>
+map <Leader>nf :NERDTreeFind<CR>
+
 map <leader>us :UltiSnipsEdit<CR>
 
 "New tab
@@ -171,6 +175,8 @@ map <Leader>tn :tabnew<CR>
 map <Leader>gs :Git<CR>
 map <Leader>gw :Gwrite<CR>
 map <Leader>gc :Git commit<CR>
+
+map <Leader>gi :!gh issue list<CR>
 
 "tabularize
 map <Leader>a: :Tabularize /:\zs<CR>
@@ -184,19 +190,9 @@ map <Leader>a{ :Tabularize /{<CR>:Tabularize /}<CR>
 nmap <Leader>gx :Tmux gitx<CR>
 nmap <Leader>t :Tmux
 nmap <Leader>ct :Tmux ctags -R --exclude=@.ctags_exclude .<CR>
-" run ctags
-:command! Ctags !touch .ctags_exclude && ctags -R --exclude=@.ctags_exclude .
-
-nmap <C-c>t <Plug>SetTmuxVars
 
 "write current buffer
 nmap <Leader>ww :w<CR>
-
-" Support different cursor in insert mode.
-if &term == "screen-256color"
-  let &t_SI = "\<Esc>[3 q"
-  let &t_EI = "\<Esc>[0 q"
-endif
 
 "Debugging
 map <Leader>db Odebugger; 1<CR><ESC>:w<CR>
@@ -205,6 +201,17 @@ map <Leader>br Oborder: 2px solid red;<CR><ESC>:w<CR>
 
 map <Leader>bo :BufOnly<CR>
 map <Leader>bd :bd<CR>
+
+" run ctags
+:command! Ctags !touch .ctags_exclude && ctags -R --exclude=@.ctags_exclude .
+
+nmap <C-c>t <Plug>SetTmuxVars
+
+" Support different cursor in insert mode.
+if &term == "screen-256color"
+  let &t_SI = "\<Esc>[3 q"
+  let &t_EI = "\<Esc>[0 q"
+endif
 
 " When editing a file, always jump to the last known cursor position.
 " Don't do it when the position is invalid or when inside an event handler
@@ -271,6 +278,9 @@ nmap <Leader>cr ggdG"+p
 
 " Visually select the last yank into this buffer
 nmap <Leader>sp '[V']$
+
+" Open README.md in a new tab
+nmap <Leader>gr :tab drop README.md<CR>
 
 " source .exrc or .vimrc in current folder, on launch
 set exrc
@@ -339,9 +349,6 @@ nnoremap <silent> <C-a>j :TmuxNavigateDown
 nnoremap <silent> <C-a>k :TmuxNavigateUp
 nnoremap <silent> <C-a>l :TmuxNavigateRight
 let g:tmux_navigator_no_mappings = 1
-
-" Open README.md in a new tab
-nmap <Leader>gr :tab drop README.md<CR>
 
 lua << EOF
   require("twilight").setup {

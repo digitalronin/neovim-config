@@ -41,7 +41,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
   Plug 'jparise/vim-graphql'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+  " Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
   Plug 'tpope/vim-abolish'
 
 " TODO
@@ -227,6 +227,9 @@ filetype plugin indent on
 set dictionary+=/usr/share/dict/words
 set thesaurus+=/Users/davidsalgado/Documents/mthesaur.txt
 au FileType text setlocal complete+=k
+
+" Autoclose HTML/ERB tags by entering "<" then <ctrl-x><ctrl-o>
+au FileType html,eruby setlocal omnifunc=htmlcomplete#CompleteTags
 
 " *.md files are Markdown, not Modula2, but I hate the highlighting,
 " so open them without syntax highlighting

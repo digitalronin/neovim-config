@@ -79,6 +79,9 @@ set nohlsearch
 " Highlight search matches as you type
 set incsearch
 
+set ignorecase
+set smartcase
+
 " Enable backspacing over everything
 set backspace=indent,eol,start
 

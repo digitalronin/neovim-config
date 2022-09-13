@@ -43,6 +43,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   " Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
   Plug 'tpope/vim-abolish'
+  Plug 'mechatroner/rainbow_csv'
 
 " TODO
 " ale

@@ -338,6 +338,9 @@ let g:go_version_warning = 0     " No error if go is not installed
 " Enable syntax highlighting of code blocks in markdown
 let g:markdown_fenced_languages = ['html', 'javascript', 'python', 'ruby', 'vim']
 
+" Use the python version installed by brew
+let g:python3_host_prog = '/usr/local/bin/python'
+
 " force vim to rescan the entire buffer when highlighting, but only for
 " js/jsx/ts/tsx files
 autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart

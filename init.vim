@@ -73,7 +73,7 @@ set wrap
 set ruler
 set shiftwidth=2
 set nofoldenable
-set history=200
+set history=500
 
 " Don't highlight search matches
 set nohlsearch

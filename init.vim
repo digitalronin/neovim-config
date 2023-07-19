@@ -11,7 +11,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'christoomey/vim-tmux-navigator'
   Plug 'ctrlpvim/ctrlp.vim'
-  Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
   Plug 'jpalardy/vim-slime'
   Plug 'morhetz/gruvbox' "Theme
   Plug 'preservim/nerdtree'
@@ -28,8 +27,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'vim-ruby/vim-ruby'
   Plug 'vim-scripts/BufOnly.vim'
   Plug 'sirver/UltiSnips'
-  Plug 'tsandall/vim-rego'
-  Plug 'elixir-lang/vim-elixir'
   Plug 'jgdavey/tslime.vim'
   Plug 'thoughtbot/vim-rspec'
   Plug 'tomlion/vim-solidity'
@@ -199,17 +196,14 @@ nmap <Leader>ct :Tmux ctags -R --exclude=@.ctags_exclude .<CR>
 "write current buffer
 nmap <Leader>ww :w<CR>
 
-"Debugging
-map <Leader>db Odebugger; 1<CR><ESC>:w<CR>
-map <Leader>bp Obinding.pry<CR><ESC>:w<CR>
-map <Leader>br Oborder: 2px solid red;<CR><ESC>:w<CR>
-
 map <Leader>bo :BufOnly<CR>
 map <Leader>bd :bd<CR>
 
 " run ctags
 :command! Ctags !touch .ctags_exclude && ctags -R --exclude=@.ctags_exclude .
 
+" Use this to (re)set the target tmux session/window/pane for tslime
+" commands (i.e. where to run the tests)
 nmap <C-c>t <Plug>SetTmuxVars
 
 " Support different cursor in insert mode.

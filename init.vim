@@ -192,6 +192,10 @@ map <Leader>a{ :Tabularize /{<CR>:Tabularize /}<CR>
 nmap <Leader>gx :Tmux gitx<CR>
 nmap <Leader>t :Tmux
 nmap <Leader>ct :Tmux ctags -R --exclude=@.ctags_exclude .<CR>
+" Use this to (re)set the target tmux session/window/pane for tslime
+" commands (i.e. where to run the tests)
+nmap <C-c>t <Plug>SetTmuxVars
+
 
 "write current buffer
 nmap <Leader>ww :w<CR>
@@ -201,10 +205,6 @@ map <Leader>bd :bd<CR>
 
 " run ctags
 :command! Ctags !touch .ctags_exclude && ctags -R --exclude=@.ctags_exclude .
-
-" Use this to (re)set the target tmux session/window/pane for tslime
-" commands (i.e. where to run the tests)
-nmap <C-c>t <Plug>SetTmuxVars
 
 " Support different cursor in insert mode.
 if &term == "screen-256color"

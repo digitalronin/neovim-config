@@ -332,7 +332,7 @@ let g:go_version_warning = 0     " No error if go is not installed
 let g:markdown_fenced_languages = ['html', 'javascript', 'python', 'ruby', 'vim']
 
 " Use the python version installed by brew
-let g:python3_host_prog = '/usr/local/bin/python'
+let g:pythpn3_host_prog = '/Users/david/.pyenv/versions/default/bin/python'
 
 " force vim to rescan the entire buffer when highlighting, but only for
 " js/jsx/ts/tsx files

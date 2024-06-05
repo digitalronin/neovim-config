@@ -24,7 +24,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-endwise'
   Plug 'tpope/vim-ragtag'
   Plug 'tpope/vim-rails'
-  Plug 'vim-ruby/vim-ruby'
   Plug 'vim-scripts/BufOnly.vim'
   Plug 'sirver/UltiSnips'
   Plug 'jgdavey/tslime.vim'

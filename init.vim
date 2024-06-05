@@ -30,7 +30,6 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'jgdavey/tslime.vim'
   Plug 'thoughtbot/vim-rspec'
   Plug 'tomlion/vim-solidity'
-  Plug 'vaporlang/vim-vyper'
   Plug 'pangloss/vim-javascript'
   Plug 'folke/twilight.nvim'
   Plug 'leafgarland/typescript-vim'

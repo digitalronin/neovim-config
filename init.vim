@@ -40,6 +40,7 @@ call plug#begin('~/.config/nvim/plugged')
   Plug 'tpope/vim-abolish'
   Plug 'mechatroner/rainbow_csv'
   Plug 'hashivim/vim-terraform'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " TODO
 " ale

@@ -117,14 +117,6 @@ imap  =>
 " of a word.
 nmap - #*
 
-"Text bubbling (requires 'unimpaired' plugin)
-" Bubble single lines
-nmap <C-k> [e
-nmap <C-j> ]e
-" Bubble multiple lines
-vmap <C-k> [egv
-vmap <C-j> ]egv
-
 " preserve visual selection when indenting/outdenting
 vmap > >gv
 vmap < <gv
@@ -346,13 +338,6 @@ source ~/.config/nvim/scripts/remove_trailing_whitespace.vim
 source ~/.config/nvim/scripts/ctrlp.vim
 source ~/.config/nvim/scripts/prose.vim
 source ~/.config/nvim/scripts/visual_search.vim
-
-" Not sure why these are needed - vim works fine without them
-nnoremap <silent> <C-a>h :TmuxNavigateLeft
-nnoremap <silent> <C-a>j :TmuxNavigateDown
-nnoremap <silent> <C-a>k :TmuxNavigateUp
-nnoremap <silent> <C-a>l :TmuxNavigateRight
-let g:tmux_navigator_no_mappings = 1
 
 lua << EOF
   require("twilight").setup {
